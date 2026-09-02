@@ -1,0 +1,96 @@
+{
+  "_comment": "Edit this file to change your personal info, colors, and section text. No coding needed.",
+
+  "site": {
+    "brandFirstName": "Ahmad",
+    "brandLastName": "Akbary",
+    "domainSuffix": ".dev",
+    "pageTitle": "Ahmad Akbary — Full-Stack Developer & Data Analyst",
+    "favicon": "assets/favicon.png"
+  },
+
+  "colors": {
+    "_comment": "These become CSS variables. You can also change them live from the Customize panel on the site (click the gear icon).",
+    "dark": {
+      "bg": "#05070d",
+      "bgSecondary": "#0a0e1a",
+      "surface": "#0d1220",
+      "surfaceHover": "#121828",
+      "border": "#1d2438",
+      "text": "#f3f5f9",
+      "textMuted": "#8b93a7",
+      "accentPrimary": "#6366f1",
+      "accentSecondary": "#22d3ee",
+      "success": "#34d399",
+      "danger": "#f87171"
+    },
+    "light": {
+      "bg": "#f7f8fc",
+      "bgSecondary": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceHover": "#eef0f8",
+      "border": "#e2e5f0",
+      "text": "#12141c",
+      "textMuted": "#5a5f72",
+      "accentPrimary": "#4f46e5",
+      "accentSecondary": "#0891b2",
+      "success": "#059669",
+      "danger": "#dc2626"
+    }
+  },
+
+  "particles": {
+    "_comment": "Controls the animated network background in the hero section.",
+    "color": "#7dd3fc",
+    "lineColor": "125, 211, 252",
+    "count": 90,
+    "maxDistance": 150,
+    "speed": 0.35
+  },
+
+  "nav": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Tech Stack", "href": "#tech-stack" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Certifications", "href": "#certifications" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+
+  "hero": {
+    "badge": "Available for new opportunities",
+    "greeting": "Hi, I'm",
+    "nameLine1": "Ahmad",
+    "nameLine2": "AKBARY",
+    "typewriterPrefix": "",
+    "typewriterRoles": ["Full-Stack Developer", "Data Analyst", "M&E Specialist", "System Architect"],
+    "description": "I bridge the gap between engineering and analytics. From writing clean React interfaces to architecting robust Node/Django backends and crafting compelling data visualizations.",
+    "primaryButton": { "text": "View Projects", "href": "#projects" },
+    "secondaryButton": { "text": "Contact Me", "href": "#contact" }
+  },
+
+  "about": {
+    "eyebrow": "The Journey",
+    "title": "Evolution of a System Architect",
+    "image": "assets/about-placeholder.jpg",
+    "paragraphs": [
+      "I'm a multidisciplinary tech professional who thrives at the intersection of software engineering, data science, and monitoring & evaluation. My journey has taken me from writing my first lines of Python to architecting enterprise-grade data collection and analytics systems used by organizations worldwide.",
+      "I believe technology should serve a purpose — whether it's building a full-stack platform, designing an interactive Power BI dashboard, or deploying a digital survey system that collects critical data in remote communities. Every project I touch is engineered with precision and purpose."
+    ],
+    "tags": ["Developer", "Data Analyst", "M&E Specialist", "System Architect"]
+  },
+
+  "footer": {
+    "text": "Crafted with care."
+  },
+
+  "contact": {
+    "intro": "Have an idea, a project, or a role in mind? I read every message and reply within a day.",
+    "email": "you@example.com",
+    "github": "https://github.com/your-username",
+    "linkedin": "https://linkedin.com/in/your-username",
+    "formEndpoint": "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_comment": "Each item's 'icon' is a Simple Icons slug (see https://simpleicons.org). 'color' is optional — a hex without # used to tint the icon; leave empty for the icon's default brand color. To add a new tech, copy a block and change the values.",
+
+  "categories": [
+    {
+      "name": "Frontend",
+      "items": [
+        { "name": "React", "icon": "react", "color": "61DAFB" },
+        { "name": "Next.js", "icon": "nextdotjs", "color": "ffffff" },
+        { "name": "TypeScript", "icon": "typescript", "color": "3178C6" },
+        { "name": "JavaScript", "icon": "javascript", "color": "F7DF1E" },
+        { "name": "HTML5", "icon": "html5", "color": "E34F26" },
+        { "name": "CSS3", "icon": "css3", "color": "1572B6" }
+      ]
+    },
+    {
+      "name": "Backend",
+      "items": [
+        { "name": "Node.js", "icon": "nodedotjs", "color": "339933" },
+        { "name": "Express", "icon": "express", "color": "ffffff" },
+        { "name": "Django", "icon": "django", "color": "092E20" },
+        { "name": "Python", "icon": "python", "color": "3776AB" }
+      ]
+    },
+    {
+      "name": "Databases",
+      "items": [
+        { "name": "PostgreSQL", "icon": "postgresql", "color": "4169E1" },
+        { "name": "MySQL", "icon": "mysql", "color": "4479A1" },
+        { "name": "SQLite", "icon": "sqlite", "color": "003B57" }
+      ]
+    },
+    {
+      "name": "Data & Analytics",
+      "items": [
+        { "name": "Pandas", "icon": "pandas", "color": "150458" },
+        { "name": "NumPy", "icon": "numpy", "color": "013243" },
+        { "name": "Plotly", "icon": "plotly", "color": "3F4F75" },
+        { "name": "Power BI", "icon": "powerbi", "color": "F2C811" },
+        { "name": "Streamlit", "icon": "streamlit", "color": "FF4B4B" }
+      ]
+    }
+  ]
+}

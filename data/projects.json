@@ -1,0 +1,58 @@
+[
+  {
+    "_comment": "media.type can be 'image', 'gif', or 'video'. For video, media.src should point to an .mp4 file and it will autoplay muted + loop.",
+    "id": "enterprise-mne-dashboard",
+    "title": "Enterprise M&E Dashboard",
+    "category": "Data & Analytics",
+    "description": "Real-time monitoring and evaluation dashboard tracking 50,000+ data points across 12 regions. Built with Power BI and automated Python data pipelines.",
+    "tags": ["Power BI", "Python", "SurveyCTO", "PostgreSQL"],
+    "media": { "type": "image", "src": "assets/projects/placeholder1.jpg" },
+    "liveLink": "",
+    "githubLink": "",
+    "featured": true
+  },
+  {
+    "id": "health-data-collection-platform",
+    "title": "Health Data Collection Platform",
+    "category": "Survey Systems",
+    "description": "Multi-language digital survey system deployed across 8 countries for health outcome tracking. Offline-capable with automated quality checks.",
+    "tags": ["SurveyCTO", "XLSForm", "Python", "Looker Studio"],
+    "media": { "type": "image", "src": "assets/projects/placeholder.jpg" },
+    "liveLink": "",
+    "githubLink": "",
+    "featured": true
+  },
+  {
+    "id": "analytics-web-application",
+    "title": "Analytics Web Application",
+    "category": "Full Stack",
+    "description": "Full-stack analytics platform with React frontend and Flask backend. Real-time data processing, user authentication, and interactive Streamlit dashboards.",
+    "tags": ["React", "Flask", "Streamlit", "Docker"],
+    "media": { "type": "image", "src": "assets/projects/placeholder.jpg" },
+    "liveLink": "",
+    "githubLink": "",
+    "featured": true
+  },
+  {
+    "id": "education-impact-tracker",
+    "title": "Education Impact Tracker",
+    "category": "M&E Systems",
+    "description": "End-to-end M&E framework for tracking learning outcomes across program sites, with automated indicator scorecards for donors.",
+    "tags": ["Django", "PostgreSQL", "Power BI"],
+    "media": { "type": "image", "src": "assets/projects/placeholder.jpg" },
+    "liveLink": "",
+    "githubLink": "",
+    "featured": false
+  },
+  {
+    "id": "automated-reporting-engine",
+    "title": "Automated Reporting Engine",
+    "category": "Automation",
+    "description": "Python-based automated reporting system that generates weekly executive PDF and slide reports directly from live data sources.",
+    "tags": ["Python", "Pandas", "Automation"],
+    "media": { "type": "image", "src": "assets/projects/placeholder.jpg" },
+    "liveLink": "",
+    "githubLink": "",
+    "featured": false
+  }
+]
