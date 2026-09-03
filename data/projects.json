@@ -7,7 +7,7 @@
     "description": "Real-time monitoring and evaluation dashboard tracking 50,000+ data points across 12 regions. Built with Power BI and automated Python data pipelines.",
     "tags": ["Power BI", "Python", "SurveyCTO", "PostgreSQL"],
     "media": { "type": "image", "src": "assets/projects/placeholder1.jpg" },
-    "liveLink": "",
+    "liveLink": "https://ahmad0908-psr.github.io/Humanitarian-MEAL-Dashboard/",
     "githubLink": "",
     "featured": true
   },
