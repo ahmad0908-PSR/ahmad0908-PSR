@@ -11,6 +11,32 @@
     "githubLink": "",
     "featured": true
   },
+
+    {
+    "id": "enterprise-mne-dashboard",
+    "title": "Humanitarian M&E Dashboard",
+    "category": "Data & Analytics",
+    "description": "Real-time monitoring and evaluation dashboard tracking 50,000+ data points across 12 regions. Built with Power BI and automated Python data pipelines.",
+    "tags": ["Power BI", "Python", "SurveyCTO", "PostgreSQL"],
+    "media": { "type": "image", "src": "assets/projects/placeholder2.jpg" },
+    "liveLink": "https://datastudio.google.com/s/nMx7YrZ9Bm0",
+    "githubLink": "",
+    "featured": true
+  },
+
+   {
+    "id": "enterprise-mne-dashboard",
+    "title": "MEAL International Dashboard",
+    "category": "Data & Analytics",
+    "description": "Real-time monitoring and evaluation dashboard tracking 50,000+ data points across 12 regions. Built with Power BI and automated Python data pipelines.",
+    "tags": ["Power BI", "Python", "SurveyCTO", "PostgreSQL"],
+    "media": { "type": "image", "src": "assets/projects/placeholder3.jpg" },
+    "liveLink": "https://humanitarian-monitoring-dashboard.streamlit.app/",
+    "githubLink": "",
+    "featured": true
+  },
+
+
   {
     "id": "health-data-collection-platform",
     "title": "Health Data Collection Platform",
