@@ -5,12 +5,14 @@
     {
       "name": "Frontend",
       "items": [
+        { "name": "HTML5", "icon": "html5", "color": "E34F26" },
+        { "name": "CSS", "icon": "css", "color": "663399" },
+        { "name": "Tailwind CSS", "icon": "tailwindcss", "color": "06B6D4" },
+        { "name": "JavaScript", "icon": "javascript", "color": "F7DF1E" },
+        { "name": "TypeScript", "icon": "typescript", "color": "3178C6" },
         { "name": "React", "icon": "react", "color": "61DAFB" },
         { "name": "Next.js", "icon": "nextdotjs", "color": "ffffff" },
-        { "name": "TypeScript", "icon": "typescript", "color": "3178C6" },
-        { "name": "JavaScript", "icon": "javascript", "color": "F7DF1E" },
-        { "name": "HTML5", "icon": "html5", "color": "E34F26" },
-        { "name": "CSS3", "icon": "css3", "color": "1572B6" }
+        { "name": "Bootstrap", "icon": "bootstrap", "color": "7952B3" }
       ]
     },
     {
@@ -18,6 +20,7 @@
       "items": [
         { "name": "Node.js", "icon": "nodedotjs", "color": "339933" },
         { "name": "Express", "icon": "express", "color": "ffffff" },
+        { "name": "Nest.JS", "icon": "nestjs", "color": "E0234E" },
         { "name": "Django", "icon": "django", "color": "092E20" },
         { "name": "Python", "icon": "python", "color": "3776AB" }
       ]
@@ -27,6 +30,8 @@
       "items": [
         { "name": "PostgreSQL", "icon": "postgresql", "color": "4169E1" },
         { "name": "MySQL", "icon": "mysql", "color": "4479A1" },
+        { "name": "MongoDB", "icon": "mongodb", "color": "47A248" },
+        { "name": "MariaDB", "icon": "mariadb", "color": "003545" },
         { "name": "SQLite", "icon": "sqlite", "color": "003B57" }
       ]
     },
@@ -37,7 +42,17 @@
         { "name": "NumPy", "icon": "numpy", "color": "013243" },
         { "name": "Plotly", "icon": "plotly", "color": "3F4F75" },
         { "name": "Power BI", "icon": "powerbi", "color": "F2C811" },
-        { "name": "Streamlit", "icon": "streamlit", "color": "FF4B4B" }
+        { "name": "Streamlit", "icon": "streamlit", "color": "FF4B4B" },
+        { "name": "Polars", "icon": "polars", "color": "0075FF" }
+
+      ]
+    },
+    {
+      "name": "Version Control",
+      "items": [
+        { "name": "Git", "icon": "git", "color": "F03C2E" },
+        { "name": "GitHub", "icon": "github", "color": "181717" }
+
       ]
     }
   ]
