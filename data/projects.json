@@ -83,14 +83,36 @@
   },
   {
     "id": "management-systems",
-    "title": "Management Systems",
+    "title": "Dental Clinic Management System",
     "category": "Management Systems",
-    "description": "Python-based automated reporting system that generates weekly executive PDF and slide reports directly from live data sources.",
-    "tags": ["Python", "Pandas", "Automation"],
-    "media": { "type": "image", "src": "assets/projects/placeholder.jpg" },
-    "liveLink": "",
+    "description": "A Full Dental Clinic Management system having modules for Patients, Appointments, Dental Chart, Treatment Plans, Treatments, Dentists, Billing, Reports. Built with HTML, CSS, JavaScript, JSON.",
+    "tags": ["HTML", "CSS", "Vanilla JavaScript","JavaScript Object Notation"],
+    "media": { "type": "image", "src": "assets/projects/dentalPMS.jpg" },
+    "liveLink": "https://ahmad0908-psr.github.io/Dental-clinic-Management-System/#/dashboard",
     "githubLink": "",
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "management-systems",
+    "title": "Gym Management System",
+    "category": "Management Systems",
+    "description": "A Full Gym Management System consist of Dashboard, Modules for Members, memberships, Attendance, Payments, Trainers, Classes, Workout Plans, Exercise library, and Reports. Built with HTML, CSS, JavaScript, JSON.",
+    "tags": ["HTML", "CSS", "Vanilla JavaScript","JavaScript Object Notation"],
+    "media": { "type": "image", "src": "assets/projects/gymMS.jpg" },
+    "liveLink": "https://ahmad0908-psr.github.io/Gym-Management-System/#/dashboard",
+    "githubLink": "",
+    "featured": true
+  },
+  {
+    "id": "management-systems",
+    "title": "Project/Task Management System",
+    "category": "Management Systems",
+    "description": "A Full Project/Task Management System great for Project, Program and portfolio Managers, having modules for Dashboard, Projects, Tasks, Kanban Board, Calender, Milestones, Team, Reports. Built with HTML, CSS, JavaScript, JSON.",
+    "tags": ["HTML", "CSS", "Vanilla JavaScript","JavaScript Object Notation"],
+    "media": { "type": "image", "src": "assets/projects/projectMS.jpg" },
+    "liveLink": "https://ahmad0908-psr.github.io/Project-Task-Mangement-System/#/dashboard",
+    "githubLink": "",
+    "featured": true
   }
 
 ]
