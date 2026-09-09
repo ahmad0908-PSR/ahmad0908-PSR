@@ -36,6 +36,18 @@
     "featured": true
   },
 
+  {
+    "id": "enterprise-mne-dashboard",
+    "title": "MEAL International Dashboard",
+    "category": "Data & Analytics",
+    "description": "Global COVID-19 Intelligence Dashboard\nAn interactive browser-based public-health data visualization platform combining historical COVID-19 statistics, temporal analytics, population-normalized indicators, country comparisons, and geospatial visualization, Built with vanilla HTML5, CSS3, and ES6+ JavaScript. Mapping via MapLibre GL JS and deck.gl. Analytical charts via Apache ECharts and Chart.js.",
+    "tags": ["Python", "Pandas", "SurveyCTO", "MapLibre GL JS", "Apache ECharts","Chart.js"],
+    "media": { "type": "image", "src": "assets/projects/covid19.jpg" },
+    "liveLink": "https://ahmad0908-psr.github.io/Covid-19-Intelligence-Dashboard/",
+    "githubLink": "",
+    "featured": true
+  },
+
 
   {
     "id": "health-data-collection-platform",
