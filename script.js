@@ -446,6 +446,42 @@ function renderProjects(projects) {
   });
 
   drawProjectGrid(projects);
+
+  // === CHANGE: whole-card click-through ===================================
+  // Cards are re-rendered (grid.innerHTML replaced) every time a filter is
+  // clicked, but the #project-grid CONTAINER element itself never changes.
+  // So instead of attaching a click listener to every individual card inside
+  // drawProjectGrid() (which would pile up duplicate listeners each time the
+  // grid re-renders), we attach ONE delegated listener here, on the
+  // container, just once when the page loads.
+  //
+  // Why delegation: clicking anywhere inside a card bubbles up to the
+  // container, so we can catch it here and figure out which card (and which
+  // liveLink) was clicked via event.target.closest(".project-card").
+  //
+  // Why we still check `event.target.closest("a")` first: the "Live site →"
+  // and "Code →" links inside the card must keep working exactly as before
+  // (opening in a new tab via target="_blank"). If we let the delegated
+  // handler act on those clicks too, the browser would try to navigate twice
+  // (once for the <a> natively, once for our JS). So if the actual click
+  // landed on an <a> tag, we just let it do its normal thing and return
+  // early — the rest of the card (image, title, description, tags, empty
+  // space) is what falls through to trigger the new "open live site" logic.
+  const projectGrid = document.getElementById("project-grid");
+  projectGrid.addEventListener("click", (event) => {
+    // If the click was on (or inside) a real link, let the browser handle
+    // it natively — don't hijack "Live site →" / "Code →".
+    if (event.target.closest("a")) return;
+
+    const card = event.target.closest(".project-card");
+    if (!card) return;
+
+    const liveLink = card.dataset.liveLink;
+    if (liveLink) {
+      window.open(liveLink, "_blank", "noopener");
+    }
+  });
+  // === END CHANGE ===========================================================
 }
 
 function drawProjectGrid(projects) {
@@ -463,8 +499,22 @@ function drawProjectGrid(projects) {
           ${p.githubLink ? `<a href="${p.githubLink}" target="_blank" rel="noopener">Code →</a>` : ""}
         </div>`;
 
+      // === CHANGE: mark the card as clickable and stash its liveLink =======
+      // - data-live-link="${p.liveLink}" stores the URL right on the <article>
+      //   element so the delegated listener in renderProjects() can read it
+      //   via card.dataset.liveLink — no need to look the project back up.
+      // - The "project-card--clickable" class is only added when a liveLink
+      //   exists, so cards without a live link (e.g. your Education Impact
+      //   Tracker / Automated Reporting Engine, which have empty liveLink)
+      //   don't get a pointer cursor or misleadingly look clickable.
+      const isClickable = Boolean(p.liveLink);
+      const cardAttrs = isClickable
+        ? ` class="project-card project-card--clickable" data-live-link="${p.liveLink}"`
+        : ` class="project-card"`;
+      // === END CHANGE =========================================================
+
       return `
-        <article class="project-card">
+        <article${cardAttrs}>
           <div class="project-card__media">
             <span class="project-card__badge">${p.category}</span>
             ${media}

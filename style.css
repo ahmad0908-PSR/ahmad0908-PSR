@@ -579,6 +579,19 @@ html[data-theme="light"] .icon-moon { display: inline-flex; }
 }
 .project-card:hover { transform: translateY(-6px); border-color: var(--accent-secondary); box-shadow: 0 24px 50px -30px rgba(34, 211, 238, 0.35); }
 
+/* === CHANGE: whole-card click affordance =================================
+   script.js now adds this class only to cards that have a liveLink, and
+   wires up a click handler on the whole <article>. Without this rule the
+   card still LOOKS the same on hover (the existing .project-card:hover
+   transform/glow above already fires for every card, clickable or not),
+   but the mouse cursor stays the default arrow outside the "Live site →"
+   link, which reads as "not clickable" even though it now is. This just
+   swaps the cursor over the clickable area so the affordance matches the
+   new behavior. No layout, color, or animation properties are touched, so
+   nothing else about the card's look changes. */
+.project-card--clickable { cursor: pointer; }
+/* === END CHANGE =========================================================== */
+
 .project-card__media {
   position: relative;
   aspect-ratio: 16 / 10;
@@ -615,6 +628,11 @@ html[data-theme="light"] .icon-moon { display: inline-flex; }
   font-size: 0.85rem; font-weight: 600; color: var(--accent-secondary);
   display: inline-flex; align-items: center; gap: 6px;
   transition: gap 0.2s var(--ease);
+  position: relative; /* CHANGE: see z-index note below */
+  z-index: 1;          /* CHANGE: keeps the link fully clickable/hoverable
+                           above the card's own click area — harmless since
+                           nothing else in the card overlaps it, this just
+                           guards against future overlapping additions */
 }
 .project-card__links a:hover { gap: 9px; }
 
